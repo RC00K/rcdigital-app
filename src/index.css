@@ -426,15 +426,25 @@ button:hover {
 }
 
 .home__content {
-    display: grid;
-    row-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__left__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
 }
 
 .home__social {
-    display: grid;
-    grid-template-columns: max-content;
-    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
     justify-content: center;
+    margin-right: 2rem;
 }
 
 .home__social__icon {
@@ -475,7 +485,6 @@ button:hover {
 .home__subtitle {
     position: absolute;
     left: 10%;
-    padding: 20px;
     text-align: left;
     font-size: var(--bigger-font-size);
     font-family: 'Rubik One', sans-serif;
@@ -499,7 +508,6 @@ button:hover {
     font-family: 'VCR OSD Mono';
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 70px;
     word-wrap: break-word;
     margin-bottom: var(--mb-1);
 }
@@ -524,16 +532,26 @@ button:hover {
 }
 
 .home__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     grid-column: 3/4;
+    flex: none;
 }
 
 .home__image img {
+    display: block;
+    margin: 0;
+    width: 100%;
     min-width: 400px;
     min-height: auto;
     max-width: 400px;
     max-height: auto;
     justify-self: center;
     align-self: center;
+    background-color: #d9d9d9;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
 }
 
 .about__container {
