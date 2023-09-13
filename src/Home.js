@@ -35,8 +35,8 @@ const Home = () => {
                         </div>
                         <div className="home__data">
                             <div className="home__title__container">
-                                <h1 className="home__title">Ryder<br/>Cook</h1>
-                                <h2 className="home__subtitle home__subtitle__stroke">Est.<br/>1998</h2>
+                                <h1 className="home__title">Ryder <br className="responsive__break"/>Cook</h1>
+                                <h2 className="home__subtitle home__subtitle__stroke">Est. <br className="responsive__break"/>1998</h2>
                             </div>
                             <div className="home__description">I am a Creative</div>
                             <p className="home__paragraph">

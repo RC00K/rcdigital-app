@@ -549,9 +549,196 @@ button:hover {
     max-height: auto;
     justify-self: center;
     align-self: center;
-    background-color: #d9d9d9;
-    padding: 0 10px 0 10px;
-    border-radius: 20px;
+    padding: 10px 10px 0 10px;
+    border-radius: 40px;
+    border: 1px solid #0051ff;
+    box-shadow: 0 0 20px #0051ff, 0 0 40px #0051ff, 0 0 80px #0051ff;
+    background-color: transparent;
+    transition: glow 0.3s;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container, .home__container {
+        width: 100%;
+    }
+    
+    br.responsive__break {
+        display: none;
+    }
+
+    .home__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home__title__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home__title {
+        text-align: center;
+    }
+
+    .home__subtitle {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .home__description {
+        text-align: center;
+    }
+
+    .home__paragraph {
+        text-align: center;
+    }
+
+    .home__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .repo__card__container {
+        padding: 10px;
+        width: 80%;
+    }
+
+    .repo__card {
+        width: calc(100% - 20px);
+        margin: 10px auto; 
+        padding: 10px;
+    }
+
+    .repo__card h3 {
+        font-size: 1.2rem;
+    }
+
+    .repo__card p {
+        font-size: 0.8rem;
+    }
+
+    .languages {
+        font-size: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .language__dot {
+        height: 8px;
+        width: 8px;
+    }
+
+    .languages__btn {
+        font-size: 1rem;
+    }
+
+    .repo__nav {
+        font-size: 1.5em;
+    }
+
+    .chevron__left, .chevron__right {
+        font-size: 1.5em;
+    } */
+}
+
+/* Extra Small Devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container, .home__container {
+        width: 100%;
+    }
+
+    br.responsive__break {
+        display: none;
+    }
+
+    .home__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home__title__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home__title {
+        text-align: center;
+    }
+
+    .home__subtitle {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .home__description {
+        text-align: center;
+    }
+
+    .home__paragraph {
+        text-align: center;
+    }
+
+    .home__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .repo__card__container {
+        padding: 10px;
+        width: 80%;
+    }
+
+    .repo__card {
+        width: calc(100% - 20px);
+        margin: 10px 1%;
+    }
+
+    .repo__card h3 {
+        font-size: 1rem;
+    }
+
+    .repo__card p {
+        font-size: 0.6rem;
+    }
+
+    .repo__card__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .languages {
+        font-size: 0.6rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .language__dot {
+        height: 6px;
+        width: 6px;
+    }
+
+    .languages__btn {
+        font-size: 0.6rem;
+    }
+
+    .repo__nav {
+        font-size: 1.5em;
+    }
+
+    .chevron__left, .chevron__right {
+        font-size: 1.5em;
+    } */
 }
 
 .about__container {
@@ -1339,100 +1526,6 @@ button:hover {
     right: 300px;
     font-size: 3rem;
 }
-
-/* Mobile */
-/* @media (max-width: 480px) {
-    .repo__card__container {
-        padding: 10px;
-    
-    width: 80%;
-}
-
-    .repo__card {
-        width: calc(100% - 20px);
-        margin: 10px auto; 
-        padding: 10px;
-    }
-
-    .repo__card h3 {
-        font-size: 1.2rem;
-    }
-
-    .repo__card p {
-        font-size: 0.8rem;
-    }
-
-    .languages {
-        font-size: 1rem;
-        grid-template-columns: 1fr;
-    }
-
-    .language__dot {
-        height: 8px;
-        width: 8px;
-    }
-
-    .languages__btn {
-        font-size: 1rem;
-    }
-
-    .repo__nav {
-        font-size: 1.5em;
-    }
-
-    .chevron__left, .chevron__right {
-        font-size: 1.5em;
-    }
-} */
-
-/* Extra Small Devices */
-/* @media (min-width: 481px) and (max-width: 767px) {
-    .repo__card__container {
-        padding: 10px;
-    
-    width: 80%;
-}
-
-    .repo__card {
-        width: calc(100% - 20px);
-        margin: 10px 1%;
-    }
-
-    .repo__card h3 {
-        font-size: 1rem;
-    }
-
-    .repo__card p {
-        font-size: 0.6rem;
-    }
-
-    .repo__card__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-    }
-
-    .languages {
-        font-size: 0.6rem;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .language__dot {
-        height: 6px;
-        width: 6px;
-    }
-
-    .languages__btn {
-        font-size: 0.6rem;
-    }
-
-    .repo__nav {
-        font-size: 1.5em;
-    }
-
-    .chevron__left, .chevron__right {
-        font-size: 1.5em;
-    }
-} */
 
 /* Small Tablets */
 /* @media (min-width: 768px) and (max-width: 991px) {
